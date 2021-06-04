@@ -81,6 +81,11 @@ body {
 }
 
 /* ---------------- Стили для меню Header ---------------- */
+
+.menu__btn {
+  display: none;
+}
+
 .menu__list {
   display: flex;
 }
@@ -140,11 +145,12 @@ body {
   content: "";
   background-image: url('../img/header-mouse.svg');
   background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
   width: 25px;
   height: 68px;
   visibility: visible;
-  bottom: 92px;
+  bottom: 8%;
   left: 50%;
   transform: translate(-70%);
 }
@@ -770,3 +776,80 @@ background-color: #00B2A0;
   margin: 0 auto;
 }
 /*#endregion*/
+
+
+
+@media (max-width: 1200px) {
+
+  .header__inner {
+    justify-content: center;
+  }
+
+  .header__title {
+    font-size: 200px;
+    line-height: 235px;
+  }
+
+  .about {
+    padding: 100px 0 100px;
+  }
+  .about__text {
+    justify-content: space-evenly;
+  }
+
+  .about__text p {
+    margin-right: 0;
+  }
+
+  .inschool{
+    padding: 100px 0;
+  }
+  .inschool__columns {
+    justify-content: space-evenly;
+  }
+
+  .inschool__row {
+  justify-content: space-evenly;
+  }
+
+  .doit {
+    background-position: center right;
+    margin-bottom: 100px;
+  }
+
+  .doit__title {
+    margin-bottom: 20px;
+  }
+  .doit__inner {
+    margin-left: 20px;
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .header__inner {
+    justify-content: center;
+  }
+
+  .logo__img {
+    margin-right: 100px;
+  }
+
+  .header__title {
+    font-size: 180px;
+    line-height: 185px;
+  }
+
+  .about__text {
+    margin: 0 -30px;
+  }
+  .about__text p{
+    flex: 0 0 430px;
+    margin: 0 30px;
+  }
+
+
+
+}
