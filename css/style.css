@@ -787,13 +787,32 @@ background-color: #00B2A0;
   padding: 100px 0;
 }
 
+.about__text {
+justify-content: space-evenly;
+}
+
+.about__text p {
+  flex: 0 0 440px;
+  margin-right: 0;
+}
+
 .inschool {
   padding: 100px 0;
 }
 
-.doit__inner {
-  padding: 150px 0 100px;
+.doit {
+  background-position: center right;
+  margin-bottom: 100px;
 }
+
+.doit__inner {
+  padding-bottom: 100px;
+}
+
+.doit__title {
+  margin-bottom: 50px;
+}
+
 }
 
 @media (max-width: 1220px) {
@@ -818,6 +837,7 @@ background-color: #00B2A0;
 }
 
 .doit__inner {
+  max-width: 45%;
   padding-top: 50px;
   margin-left: 50px;
 }
@@ -828,6 +848,17 @@ background-color: #00B2A0;
 }
 
 @media (max-width: 1200px) {
+.title {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 50px;
+  }
+
+.title::after {
+    font-size: 50px;
+    line-height: 75px;
+  }
+
 .header__inner {
   justify-content: center;
 }
@@ -839,7 +870,7 @@ background-color: #00B2A0;
 }
 
 .about {
-  padding: 100px 0 100px;
+  padding: 50px 0;
 }
 
 .about__text {
@@ -851,7 +882,7 @@ background-color: #00B2A0;
 }
 
 .inschool{
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .inschool__columns {
@@ -864,7 +895,7 @@ justify-content: space-evenly;
 
 .doit {
   background-position: center right;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .doit__title {
@@ -877,20 +908,9 @@ justify-content: space-evenly;
 }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 995px) {
 .container {
   padding: 0;
-}
-
-.title {
-  font-size: 35px;
-  line-height: 45px;
-  margin-bottom: 50px;
-}
-
-.title::after {
-  font-size: 50px;
-  line-height: 75px;
 }
 
 .header__inner {
@@ -907,6 +927,7 @@ justify-content: space-evenly;
 .menu__btn {
   display: block;
   background-color: transparent;
+  border: none;
   padding: 0;
   position: relative;
   z-index: 2;
@@ -956,7 +977,7 @@ justify-content: space-evenly;
   display: block;
 }
 
-  .menu__link:hover {
+.menu__link:hover {
   border-color: transparent;
 }
 
@@ -978,7 +999,7 @@ justify-content: space-evenly;
 }
 
 .about__text p{
-  flex: 0 0 360px;
+  flex: 0 0 340px;
   width: 100%;
 }
 
@@ -1024,24 +1045,22 @@ justify-content: space-evenly;
 
 .doit {
   background-position: bottom right;
-  background-size: 70%;
-  /* padding-bottom: 100px; */
-  font-size: 14px;
+  background-size: 43%;
+  padding-top: 50px;
+  padding-left: 20px;
+  margin-bottom: 50px;
 }
 
-.doit background-image {
-  width: 350px
-};
 .doit__inner {
-  max-width: 700px;
+  max-width: 100%;
 }
 
 .doit__inner p {
-  max-width: 350px;
+  max-width: 45%;
   width: 100%;
 }
 .doit__title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 }
