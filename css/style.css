@@ -779,10 +779,6 @@ background-color: #00B2A0;
   justify-content: center;
 }
 
-.header__title {
-  margin-top: 270px;
-}
-
 .about {
   padding: 100px 0;
 }
@@ -806,7 +802,7 @@ justify-content: space-evenly;
 }
 
 .doit__inner {
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .doit__title {
@@ -866,7 +862,6 @@ justify-content: space-evenly;
 .header__title {
   font-size: 150px;
   line-height: 170px;
-  margin-top: 100px;
 }
 
 .about {
@@ -909,9 +904,6 @@ justify-content: space-evenly;
 }
 
 @media (max-width: 995px) {
-.container {
-  padding: 0;
-}
 
 .header__inner {
   justify-content: space-between;
@@ -1044,11 +1036,7 @@ justify-content: space-evenly;
 }
 
 .doit {
-  /* background-position: bottom right;
-  background-size: 43%; */
   background-image: none !important;
-  /* padding-top: 50px;
-  padding-left: 20px; */
   padding: 50px 50px 0;
   margin-bottom: 50px;
 }
@@ -1058,17 +1046,116 @@ justify-content: space-evenly;
   margin-left: 0;
 }
 
-.doit__inner p:nth-of-type(2),
-.doit__inner p:nth-of-type(3) {
+.doit__inner p {
   margin-bottom: 15px;
 }
 
-/* .doit__inner p {
-  max-width: 45%;
-  width: 100%;
-} */
 .doit__title {
   margin-bottom: 30px;
 }
+}
+
+@media (max-width: 768px) {
+
+.title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.title::after {
+  font-size: 40px;
+  line-height: 65px;
+}
+
+.about {
+  padding: 30px 0;
+}
+
+.about__text {
+  display: block;
+  padding: 0 30px;
+}
+
+.about__text p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.inschool {
+  padding: 30px 0;
+}
+
+.inschool__columns {
+  display: block;
+  padding: 0 30px;
+}
+
+.inschool__column {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.inschool__subtitle {
+  max-width: 100%;
+  padding-left: 85px;
+  line-height: 22px;
+  padding-left: 45px;
+  margin-bottom: 20px;
+}
+
+.inschool__subtitle::before {
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.inschool__row {
+  display: block;
+  padding: 0 30px;
+}
+
+.inschool__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.inschool__text {
+  max-width: 100%;
+}
+
+.inschool__text p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.doit {
+  padding: 30px 30px 0 30px;
+}
+}
+
+@media (max-width: 575px) {
+
+.title {
+  font-size: 26px;
+}
+
+.title::after {
+  font-size: 35px;
+  line-height: 60px;
+}
+}
+
+@media (max-width: 440px) {
+
+  .title {
+    font-size: 20px;
+  }
+
+  .title::after {
+    font-size: 30px;
+    line-height: 60px;
+  }
+
 
 }
