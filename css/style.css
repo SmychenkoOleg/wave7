@@ -295,6 +295,7 @@ body {
 
 .doit__inner {
   max-width: 512px;
+  width: 100%;
   padding: 200px 0 165px;
 }
 
@@ -660,22 +661,22 @@ body {
 
 /* #region ---------------- Стили для секции Request Form ---------------- */
 
-.form__title {
+.request__title {
   margin-bottom: 243px;
 }
 
-.form__inner {
+.request__inner {
   display: flex;
   margin-bottom: 200px;
 }
 
-.form__request {
+.form {
   max-width: 600px;
   width: 100%;
   padding-right: 31px;
 }
 
-.form__request input {
+.form input {
   border: none;
   border-bottom: 2px solid #dadada;
   display: block;
@@ -685,7 +686,7 @@ body {
   color: #00b2a0;
 }
 
-.form__request input:nth-child(2) {
+.form input:nth-child(2) {
   margin-bottom: 53px;
 }
 
@@ -697,7 +698,7 @@ body {
   padding-bottom: 115px;
 }
 
-.form__request input::placeholder,
+.form input::placeholder,
 .form__message::placeholder {
   font-size: 18px;
   line-height: 18px;
@@ -736,11 +737,11 @@ body {
   line-height: 30px;
 }
 
-.contacts__item:nth-child(odd) {
+.contacts__item:not(:last-child) {
   margin-bottom: 65px;
 }
 
-.address {
+address {
   font-style: normal;
   max-width: 327px;
   width: 100%;
@@ -799,7 +800,12 @@ body {
 
   .about,
   .inschool,
-  .doit {
+  /* .doit, */
+  .portfolio,
+  .blog,
+  .team,
+  .price,
+  .maps {
     padding: 100px 0;
   }
 
@@ -990,7 +996,12 @@ body {
 
   .about,
   .inschool,
-  .doit {
+  .doit,
+  .portfolio,
+  .blog,
+  .team,
+  .price,
+  .maps  {
     padding: 50px 0;
   }
 
@@ -1037,6 +1048,7 @@ body {
   .title {
     font-size: 40px;
     line-height: 1;
+    margin-bottom: 50px;
   }
   .title::after{
     display: none;
@@ -1058,7 +1070,7 @@ body {
   .inschool__count::before {
     width: calc(var(--wave-width) - 68px)
   }
- 
+
 }
 
 @media (max-width: 320px) {
